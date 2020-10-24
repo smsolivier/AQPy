@@ -27,6 +27,7 @@ The BME280 is assumed to be connected with I2C.
 1. copy `aqi.service` to `/etc/systemd/system` with `sudo cp aqi.service /etc/systemd/system` 
 2. run `sudo systemctl enable aqi` to start `aqi.service` at boot 
 3. either `sudo reboot` or `sudo systemctl start aqi` to start the service 
+4. make sure its running with `systemctl status aqi`. It will say "active (running)" if things are working properly. 
 
 # Maintenance 
 `systemctl` stores logs that can be accessed through `journalctl -u aqi`. `journalctl` uses the `less` linux utility to show the logs. A brief summary of `aqi.service` can be obtained by running `systemctl status aqi`. If the sensors stop working (or I didn't code things robustly enough) the python runtime errors will be recorded by `systemctl`. If the `read_sensors.py` script fails, `systemctl` will automatically restart it however if it fails too many times it will wait longer and longer between retries. 
