@@ -9,12 +9,10 @@ The PMS5003 is assumed to be connected over serial in the `/dev/serial0` positio
 | ------------ | -------------------- |
 | VCC (1) | 2 | 
 | GND (2) | 6 | 
-| SET (3) | - | 
+| SET (3) | unused | 
 | RX (4) | 8 | 
 | TX (5) | 10 |
-| RESET (6) | - | 
-| - (7) | - | 
-| - (8) | - | 
+| RESET (6) | unused | 
 
 ## BME280 
 The BME280 is assumed to be connected with I2C. 
