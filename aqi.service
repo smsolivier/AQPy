@@ -1,0 +1,15 @@
+[Unit]
+Description=run AQI sensor script
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi
+# use -u to make print statements unbuffered in logs
+ExecStart=/usr/bin/python3 -u AQPy/read_sensors.py
+User=pi
+Group=pi
+Restart=on-failure
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
