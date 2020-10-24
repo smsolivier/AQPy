@@ -3,7 +3,7 @@ Repository for scripts and files to read the PMS5003 air quality index sensor an
 
 # Hardware 
 ## PMS5003 
-The PMS5003 is assumed to be connected over serial in the `/dev/serial0` position. See https://www.aqmd.gov/docs/default-source/aq-spec/resources-page/plantower-pms5003-manual_v2-3.pdf for wiring diagram of the PMS5003. The `\pinout` command on the Raspberry Pi OS will show the function of the GPIO pins. 
+The PMS5003 is assumed to be connected over serial in the `/dev/serial0` position. See https://www.aqmd.gov/docs/default-source/aq-spec/resources-page/plantower-pms5003-manual_v2-3.pdf for wiring diagram of the PMS5003. The `pinout` command on the Raspberry Pi OS will show the function of the GPIO pins. 
 
 | PMS Wire No. | Raspberry Pi Pin No. |
 | ------------ | -------------------- |
