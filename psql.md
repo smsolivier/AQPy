@@ -11,4 +11,4 @@ The temperature, pressure, and humidity are stored in the `bme` database while t
 * `select * from pi order by t desc;`: get all data displaying the most recent entry first
 
 # Timescaledb Queries 
-* `select time_bucket('1 hour', t) as time, avg(temperature) from sam group by time order by time desc;`: get average temperature in 1 hour intervals 
+* `select time_bucket('1 hour', t) as time, avg(temperature) from pi group by time order by time desc;`: get average temperature in 1 hour intervals 
